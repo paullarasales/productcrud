@@ -1,0 +1,19 @@
+ echo "<h2> All Records </h2>";
+        echo "<table border='2'>";
+        echo "<tr>
+              <th>ID</th>
+              <th>Product</th>
+              <th>Description</th>
+              <th>Price</th>
+              </tr>";
+
+        foreach($data as $row) {
+            echo "<tr>";
+            echo "<td>" . $row["id"] . "</td>";
+            echo "<td>" . $row["product"] . "</td>";
+            echo "<td>" . $row["description"] . "</td>";
+            echo "<td>" . $row["price"] . "</td>";
+            echo "</tr>";
+        }
+
+        echo "</table>";
